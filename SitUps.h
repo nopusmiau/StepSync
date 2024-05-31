@@ -8,7 +8,7 @@ class SitUps:public Exercise{
         int repetitions;
     public:
         SitUps();
-        SitUps(string, float, int, int);
+        SitUps(string, int, int);
         int getSets();
         void setSets(int);
         int getRepetitions();
