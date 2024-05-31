@@ -5,7 +5,7 @@ PullUps::PullUps(){
     repetitions = 0;
 }
 
-PullUps::PullUps(string _name, float _duration, int _sets, int _repetitions):Exercise(_name, _duration){
+PullUps::PullUps(string _name, int _sets, int _repetitions):Exercise(_name){
     sets = _sets;
     repetitions = _repetitions;
 }
@@ -27,5 +27,5 @@ void PullUps::setRepetitions(int _repetitions){
 }
 
 float PullUps::calculateCaloriesBurned(){
-    return duration * (8 * 3.5) * sets * repetitions;
+    return (8 * 3.5) * sets * repetitions;
 }
