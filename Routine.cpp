@@ -24,7 +24,7 @@ string Routine::getRoutineInfo(){
         const type_info& type_info = typeid(*exercises[j]);
         if(type_info == typeid(Running)){
             Running *p1 = (Running *) exercises[j];
-            detailedContent = detailedContent + p1->getName() + "\n" + to_string(p1->getDistance()) + "\n";
+            detailedContent = detailedContent + p1->getName() + "\n";
             running_1 = running_1 + to_string(p1->getDistance()) + "\n";
             running_2 = running_2 + to_string(p1 ->getDuration()) + "\n";
         }
