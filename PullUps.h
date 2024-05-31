@@ -8,7 +8,7 @@ class PullUps:public Exercise{
         int repetitions;
     public:
         PullUps();
-        PullUps(string, float, int, int);
+        PullUps(string, int, int);
         int getSets();
         void setSets(int);
         int getRepetitions();
