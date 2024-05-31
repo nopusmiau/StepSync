@@ -2,12 +2,10 @@
 
 Exercise::Exercise(){
     name = "";
-    duration = 0;
 }
 
-Exercise::Exercise(string _name, float _duration){
+Exercise::Exercise(string _name){
     name = _name;
-    duration = _duration;
 }
 
 string Exercise::getName(){
@@ -16,12 +14,4 @@ string Exercise::getName(){
 
 void Exercise::setName(string _name){
     name = _name;
-}
-
-float Exercise::getDuration(){
-    return duration;
-}
-
-void Exercise::setDuration(float _duration){
-    duration = _duration;
 }
