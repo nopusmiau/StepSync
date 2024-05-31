@@ -5,7 +5,7 @@ PushUps::PushUps(){
     repetitions = 0;
 }
 
-PushUps::PushUps(string _name, float _duration, int _sets, int _repetitions):Exercise(_name, _duration){
+PushUps::PushUps(string _name, int _sets, int _repetitions):Exercise(_name){
     sets = _sets;
     repetitions = _repetitions;
 }
@@ -27,5 +27,5 @@ void PushUps::setRepetitions(int _repetitions){
 }
 
 float PushUps::calculateCaloriesBurned(){
-    return duration * (8 * 3.5) * sets * repetitions;
+    return (8 * 3.5) * sets * repetitions;
 }
