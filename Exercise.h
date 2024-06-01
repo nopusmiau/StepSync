@@ -11,7 +11,7 @@ class Exercise{
         Exercise(string);
         string getName();
         void setName(string);
-        virtual float calculateCaloriesBurned() = 0;
+        virtual double calculateCaloriesBurned() = 0;
 };
 
 # endif
