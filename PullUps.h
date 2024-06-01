@@ -13,7 +13,7 @@ class PullUps:public Exercise{
         void setSets(int);
         int getRepetitions();
         void setRepetitions(int);
-        float calculateCaloriesBurned() override;
+        double calculateCaloriesBurned() override;
 };
 
 # endif
