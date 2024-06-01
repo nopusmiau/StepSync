@@ -17,7 +17,6 @@ class Routine {
         vector <Exercise*> getExercises();
         void addExercise(Exercise*);
         string getRoutineInfo();
-        double calculateTotalCaloriesBurned();
 };
 
 # endif
