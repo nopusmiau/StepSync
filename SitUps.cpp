@@ -26,6 +26,7 @@ void SitUps::setRepetitions(int _repetitions){
     repetitions = _repetitions;
 }
 
-float SitUps::calculateCaloriesBurned(){
-    return  (8 * 3.5) * sets * repetitions;
+double SitUps::calculateCaloriesBurned(){
+    double caloriesBurned = (sets * repetitions * (8 * 3.5) * 10)/ 200;
+    return  caloriesBurned;
 }
