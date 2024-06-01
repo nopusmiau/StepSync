@@ -26,6 +26,7 @@ void PullUps::setRepetitions(int _repetitions){
     repetitions = _repetitions;
 }
 
-float PullUps::calculateCaloriesBurned(){
-    return (8 * 3.5) * sets * repetitions;
+double PullUps::calculateCaloriesBurned(){
+    double caloriesBurned = (sets * repetitions * (8 * 3.5) * 10) / 200;
+    return caloriesBurned;
 }
