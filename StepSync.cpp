@@ -230,7 +230,7 @@ int main(){
                 }
             }
             else {
-                cout << "Esta fúncion solo acepta edades de 18 hasta 50 años, porfavor salga del programa y vuelva a introducir los valores correctos" << endl;
+                cout << "This option only validates ages between 18 and 50 years old, exit the program and try again with the correct data" << endl;
             }
             
         } else if(choice == 2){
