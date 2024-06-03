@@ -11,6 +11,7 @@ int main(){
     int age;
     string gender;
     int choice;
+    int resume;
 
     cout << "What is your weight? (in Kg) " << endl;
     cin >> weight;
@@ -47,7 +48,12 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
+                    
                 }
                 else if(weight <= 80) {
                     //MiddleWeight (60 - 80 kg)
@@ -63,7 +69,11 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
                 }
                 else {
                     //HeavyWeight (> 80 kg)
@@ -79,7 +89,11 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
                 }
             }else if(age >= 26 && age <= 35){
                 if (weight < 60){
@@ -96,7 +110,11 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
                 } 
                 else if(weight <= 80){
                     //MiddleWeight (60 - 80 kg)
@@ -112,7 +130,11 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
                 }
                 else {
                     //HeavyWeight (> 80 kg)
@@ -128,7 +150,11 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
                 }
             }else if(age >= 36 && age <= 45){
                 if(weight < 60){
@@ -145,7 +171,11 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
                 }
                 else if(weight <= 80){
                     //MiddleWeight (60 - 80 kg)
@@ -161,7 +191,11 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
                 }
                 else {
                     //HeavyWeight (> 80 kg)
@@ -177,7 +211,11 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
                 }
             }else if(age >= 46 && age <= 50){
                 if(weight < 60){
@@ -194,7 +232,11 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
                 }
                 else if(weight <= 80){
                     //MiddleWeight (60 - 80 kg)
@@ -210,7 +252,11 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
                 }
                 else {
                     //HeavyWeight (> 80 kg)
@@ -226,11 +272,15 @@ int main(){
                     cout << "Here is your exercise routine: \n" << endl;
                     cout << exerciseRoutine.getRoutineInfo() << endl;
                     cout << "Do your best and never give up! \n" << endl;
-                    loop = false;
+                    cout << "Do you wish to remain in the program? (1.Yes 2.No) " << endl;
+                    cin >> resume;
+                    if(resume == 2){
+                        loop = false;
+                    }
                 }
             }
             else {
-                cout << "This option only validates ages between 18 and 50 years old, exit the program and try again with the correct data" << endl;
+                cout << "Esta fúncion solo acepta edades de 18 hasta 50 años, porfavor salga del programa y vuelva a introducir los valores correctos" << endl;
             }
             
         } else if(choice == 2){
