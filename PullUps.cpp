@@ -27,6 +27,20 @@ void PullUps::setRepetitions(int _repetitions){
 }
 
 double PullUps::calculateCaloriesBurned(){
-    double caloriesBurned = (sets * repetitions * (8 * 3.5) * 10) / 200;
+    double caloriesBurned = (sets * repetitions * 4.0 * 10) / 200;
     return caloriesBurned;
+}
+
+double PullUps::calculateCaloriesBurned(int weight){
+    double caloriesBurned = (sets * repetitions * weight * 4.0 * 10)/200;
+    return caloriesBurned;
+}
+
+bool PullUps::operator==(PullUps val){
+    if (sets==val.getSets() && repetitions==val.getRepetitions()){
+        return true;
+    }
+    else {
+        return false;
+    }
 }
