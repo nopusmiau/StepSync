@@ -29,7 +29,7 @@ int Running::getDuration(){
 
 string Running::getDuration(string measureUnit){
     string msg = measureUnit;
-    return to_string(distance) + msg;
+    return to_string(duration) + msg;
 }
 
 void Running::setDuration(int _duration){
@@ -37,6 +37,20 @@ void Running::setDuration(int _duration){
 }
 
 double Running::calculateCaloriesBurned(){
-    double caloriesBurned = (duration * distance * (11.5 * 3.5))/ 200;
+    double caloriesBurned = (duration * distance * 9)/200.0;
     return caloriesBurned;
+}
+
+double Running::calculateCaloriesBurned(int weight){
+    double caloriesBurned = ((duration * distance * 9 * weight))/200.0;
+    return caloriesBurned;
+}
+
+bool Running::operator==(Running val){
+    if (distance==val.getDistance() && duration==val.getDuration()){
+        return true;
+    }
+    else {
+        return false;
+    }
 }
