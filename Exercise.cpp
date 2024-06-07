@@ -15,3 +15,4 @@ string Exercise::getName(){
 void Exercise::setName(string _name){
     name = _name;
 }
+
