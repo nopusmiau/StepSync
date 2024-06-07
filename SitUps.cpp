@@ -27,6 +27,20 @@ void SitUps::setRepetitions(int _repetitions){
 }
 
 double SitUps::calculateCaloriesBurned(){
-    double caloriesBurned = (sets * repetitions * (8 * 3.5) * 10)/ 200;
+    double caloriesBurned = (sets * repetitions * 3.5 * 10)/ 200;
     return  caloriesBurned;
+}
+
+double SitUps::calculateCaloriesBurned(int weight){
+    double caloriesBurned = (sets * repetitions * 3.5 * weight * 10)/200;
+    return caloriesBurned;
+}
+
+bool SitUps::operator==(SitUps val) {
+    if (sets==val.getSets() && repetitions==val.getRepetitions()){
+        return true;
+    }
+    else {
+        return false;
+    }
 }
