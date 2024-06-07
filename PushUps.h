@@ -14,6 +14,8 @@ class PushUps:public Exercise{
         int getRepetitions();
         void setRepetitions(int);
         double calculateCaloriesBurned() override;
+        double calculateCaloriesBurned(int);
+        bool operator==(PushUps val);
 };
 
 # endif
