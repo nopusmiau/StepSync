@@ -27,6 +27,20 @@ void PushUps::setRepetitions(int _repetitions){
 }
 
 double PushUps::calculateCaloriesBurned(){
-    double caloriesBurned = (sets * repetitions * (8 * 3.5) * 10) / 200;
+    double caloriesBurned = (sets * repetitions * 3.8 * 10) / 200;
     return caloriesBurned;
+}
+
+double PushUps::calculateCaloriesBurned(int weight){
+    double caloriesBurned = (sets * repetitions * weight * 3.8 * 10)/200;
+    return caloriesBurned;
+}
+
+bool PushUps::operator==(PushUps val){
+    if (sets==val.getSets() && repetitions==val.getRepetitions()){
+        return true;
+    }
+    else {
+        return false;
+    }
 }
