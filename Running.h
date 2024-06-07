@@ -17,6 +17,8 @@ class Running:public Exercise{
         string getDuration(string);
         void setDuration(int);
         double calculateCaloriesBurned() override;
+        double calculateCaloriesBurned(int);
+        bool operator==(Running val);
 };
 
 # endif
