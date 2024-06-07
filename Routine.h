@@ -17,6 +17,7 @@ class Routine {
         vector <Exercise*> getExercises();
         void addExercise(Exercise*);
         string getRoutineInfo();
+        string getRoutineInfoWithWeight(int);
 };
 
 # endif
